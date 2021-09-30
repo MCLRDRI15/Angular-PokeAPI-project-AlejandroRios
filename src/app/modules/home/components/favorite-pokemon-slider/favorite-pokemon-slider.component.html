@@ -1,0 +1,32 @@
+<div class="carousel-box">
+  <span class="welcome-tittle">FAVORITE BANNER</span>
+  <carousel
+    class="carousel"
+    height="500"
+    cellsToShow="1"
+    transitionDuration="500"
+    arrowsTheme="light"
+    counter="true"
+    transitionTimingFunction="ease-in"
+  >
+    <div
+      class="carousel-cell"
+      *ngFor="let pokemon of favoritePokemonList; index as pokemonIndex"
+    >
+      <div class="item">
+        <img
+          class="pokemon-image"
+          [src]="pokemonImages[pokemonIndex]"
+          [alt]="pokemon.name"
+        />
+        <h3 class="pokemon-name">{{ pokemonNames[pokemonIndex] }}</h3>
+      </div>
+    </div>
+  </carousel>
+</div>
+
+<footer class="footer">
+  <p class="footer-message">
+    Talos Digital || @Mclrdri15 || All Rights Reserved. 
+  </p>
+</footer>

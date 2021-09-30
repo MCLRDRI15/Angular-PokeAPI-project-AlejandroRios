@@ -1,0 +1,64 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+:root {
+  --HeaderBackground: linear-gradient(
+    to right,
+    #d2d733,
+    #d9dd2d,
+    #e0e326,
+    #e7e81d,
+    #eeee10
+  );
+
+  --backgroundCardHover: #cf9f9f;
+  --HeaderBackground-nav: #e7e81d;
+  --HeaderBoxshadow: #c5c5ca33;
+  --linkColor: #335981;
+  --navActive: #e43011;
+  --WhiteColor: #ffffffff;
+  --SecondaryBlue: #355d89;
+  --buttonBlue: #4789cf;
+  --circleShadow: #0000004d;
+  --pokemon-red: #ff0000;
+  --pokemon-dark-red: #cc0000;
+  --pokemon-blue: #3b4cca;
+  --pokemon-yellow: #ffde00;
+  --pokemon-dark-yellow: #b3a125;
+  --pokemon-white: #ffffff;
+  --pokemon-black: #000000;
+  --pokemon-transparent-black: #00000080;
+  --pokemon-gray: #dbd6d62a;
+  --pokemon-light-gray: #e6e6e6;
+  --BlueColor: #2958af;
+  --BlueButtonColor: #4789cf;
+  --backgroundCard: #f5f1f1;
+  --generalBlueColor: #4789cf;
+  --borderBoxShadow: #0000004d;
+  --borderBoxHover: #ffffff;
+
+  --one-point-cero-two: 1.02rem;
+  --one-point-two: 1.2rem;
+  --one-point-five: 1.5rem;
+  --one-point-four: 1.4rem;
+  --two-point-five: 2.5rem;
+  --two: 2rem;
+  --five: 5rem;
+}
+
+.html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.body {
+  background: var(--HeaderBackground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

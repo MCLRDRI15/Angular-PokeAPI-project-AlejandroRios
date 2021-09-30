@@ -1,0 +1,92 @@
+.welcome-tittle {
+  margin-top: 0;
+  position: relative;
+  bottom: 2.5rem;
+  font-size: var(--two-point-five);
+  font-weight: 800;
+  color: var(--navActive);
+  text-align: center;
+  text-shadow: 2px 2px 2px var(--BlueColor);
+}
+
+.carousel-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  border-radius: 10px;
+  max-width: 40rem;
+}
+
+.carousel-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../../../../../assets/images/background-slider.jpeg)
+    center/cover no-repeat border-box;
+  border-radius: 10px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+}
+
+.pokemon-name {
+  margin: 0;
+  font-size: 5rem;
+  -webkit-text-stroke: 0.1rem var(--pokemon-black);
+  color: var(--pokemon-white);
+}
+
+.pokemon-image {
+  width: 5rem;
+  image-rendering: pixelated;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  height: 3rem;
+  background: var(--HeaderBackground-nav);
+  border-top: 1px solid var(--circleShadow);
+}
+
+.footer-message {
+  margin: 0;
+  color: var(--pokemon-black);
+  font-size: var(--one-point-four);
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .carousel-cell {
+    width: 80%;
+  }
+
+  .footer {
+    height: 3rem;
+  }
+
+  .footer-message {
+    font-size: 0.8rem;
+  }
+
+  .pokemon-name {
+    margin: 0;
+    font-size: 3rem;
+    -webkit-text-stroke: 0.1rem var(--pokemon-black);
+    color: var(--pokemon-white);
+  }
+}

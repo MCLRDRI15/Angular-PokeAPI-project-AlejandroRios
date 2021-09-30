@@ -1,0 +1,104 @@
+.pokemon-comparison-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.pokemon-comparison-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  grid-gap: 2rem;
+  width: 100%;
+}
+
+.versus{
+  text-align: center;
+  margin-top: 5rem;
+  font-weight: 800;
+  font-size: var(--two);
+  color: var(--pokemon-dark-red);
+}
+
+.card-comparison-image {
+  margin: auto;
+  width: 80%;
+  max-width: 10rem;
+  justify-content: center;
+  image-rendering: pixelated;
+}
+
+.pokemon-comparison-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 1rem;
+}
+
+.pokemon-comparison-detail-item {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.pokemon-comparison-detail-title {
+  margin: 0;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.pokemon-comparison-detail-description {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 0.3rem;
+  font-weight: 100;
+  text-align: center;
+}
+
+.pokemon-comparison-detail-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (max-width: 900px) {
+  .pokemon-comparison-images {
+    grid-gap: 1rem;
+  }
+
+  .pokemon-comparison-information {
+    margin: 0.5rem;
+  }
+
+  .pokemon-comparison-details {
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    width: 90%;
+  }
+
+  .pokemon-comparison-detail-description {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .versus{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: var(--one-point-cero-two);
+  }
+}
+
+
+@media screen and (max-width: 450px){
+  .versus{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: var(--one-point-cero-two);
+  }
+}

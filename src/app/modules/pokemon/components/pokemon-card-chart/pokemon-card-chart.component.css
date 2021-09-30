@@ -1,0 +1,9 @@
+.chart {
+  margin: 4rem;
+}
+
+@media screen and (max-width: 550px) {
+  .chart {
+    margin: 1.5rem;
+  }
+}

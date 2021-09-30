@@ -1,0 +1,18 @@
+.icon {
+  cursor: pointer;
+  margin-left: 1rem;
+  font-size: var(--one-point-five);
+  color: var(--pokemon-white);
+}
+
+.icon:hover {
+  color: var( --pokemon-red);
+}
+
+.icon-selected {
+  color: var( --pokemon-red);
+}
+
+.big-size {
+  font-size: var(--two);
+}

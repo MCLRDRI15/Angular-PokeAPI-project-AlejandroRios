@@ -1,0 +1,16 @@
+.mat-dialog-container {
+  margin: auto;
+  width: 70%;
+  padding: 0;
+  border: 1px solid var(--pokemon-black);
+  background: var(--HeaderBackground-nav);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .mat-dialog-container {
+    margin: auto;
+    width: 100%;
+    padding: 0;
+  }
+}

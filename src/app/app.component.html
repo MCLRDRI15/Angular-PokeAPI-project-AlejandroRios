@@ -1,0 +1,31 @@
+<div class="compare-area">
+  <header class="header">
+    <div class="principal-tittle">
+      <img class="text-tittle" src="../assets/images/tittle.png" alt="POKEMON" />
+      <div class="routes">
+        <a
+          routerLink="/"
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="link-color"
+        >
+          PokéApp
+        </a>
+        <a
+          routerLink="/pokemon"
+          routerLinkActive="active-link"
+          class="link-color"
+        >
+          Pokemons
+        </a>
+      </div>
+      <div class="hamburguer">
+        <img class="hamburguer-icon" />
+      </div>
+    </div>
+  </header>
+</div>
+
+<ng-particles [id]="id" [options]="particlesOptions" (particlesLoaded)="particlesLoaded($event)" (particlesInit)="particlesInit($event)" class="particles"></ng-particles>
+
+<router-outlet></router-outlet>

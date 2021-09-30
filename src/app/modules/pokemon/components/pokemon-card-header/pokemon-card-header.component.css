@@ -1,0 +1,98 @@
+.pokemon-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--generalBlueColor);
+  width: 100%;
+}
+
+.favorite-list-heart{
+  position: relative;
+  top: 0.3rem;
+  animation-name: heartFadeInOut; 
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
+.favorite-list-heart:hover{
+  animation: none;
+}
+
+.close-button {
+  cursor: pointer;
+  outline: none;
+  margin: 1rem;
+  border: 0;
+  font-weight: 900;
+  font-size: var(--one-point-four);
+  background: transparent;
+  color: var(--pokemon-white);
+}
+
+.pokemon-name {
+  width: 100%;
+  text-align: center;
+  color: var(--pokemon-white);
+  margin: 1rem;
+  font-size: var(--two);
+}
+
+.compare-button {
+  cursor: pointer;
+  outline: none;
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 10rem;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid var(--backgroundCardHover);
+  background: var(--backgroundCardHover);
+  color: var(--pokemon-white);
+}
+
+.compare-button:hover,
+.compare-button:active {
+  background: var(--pokemon-white);
+  border: 2px solid var(--backgroundCardHover);
+  color: var(--backgroundCardHover);
+}
+
+@media (max-width: 900px) {
+  .close-button {
+    margin: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .pokemon-name {
+    margin: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .compare-button {
+    margin: 0.5rem;
+    padding: 0.2rem;
+    width: 8rem;
+    font-size: 0.8rem;
+  }
+}
+
+@keyframes heartFadeInOut {
+  0% {
+    opacity:1;
+  }
+  14% {
+    opacity:1;
+  }
+  28% {
+    opacity:0;
+  }
+  42% {
+    opacity:0;
+  }
+  70% {
+    opacity:0;
+  }
+}
