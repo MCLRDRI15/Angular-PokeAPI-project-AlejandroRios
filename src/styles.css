@@ -10,7 +10,7 @@
     #eeee10
   );
 
-  --backgroundCardHover: #cf9f9f;
+  --backgroundCardHover: #e08f8f;
   --HeaderBackground-nav: #e7e81d;
   --HeaderBoxshadow: #c5c5ca33;
   --linkColor: #335981;
@@ -35,6 +35,8 @@
   --generalBlueColor: #4789cf;
   --borderBoxShadow: #0000004d;
   --borderBoxHover: #ffffff;
+  --Card-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
+  --Card-shadow-hover: #dd6b6757 0px 54px 55px, #da8e8e80 0px -12px 30px, #ee898994 0px 4px 6px, #d37b7b9d 0px 12px 13px, #e47c7cc0 0px -3px 5px;
 
   --one-point-cero-two: 1.02rem;
   --one-point-two: 1.2rem;

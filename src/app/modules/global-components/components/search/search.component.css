@@ -109,6 +109,16 @@
   }
 }
 
+
+@media screen and (max-width: 320px) {
+  .search {
+    position: relative;
+    top: 6.5rem;
+    right: 0rem;
+    left: 2rem;
+  }
+}
+
 @media (max-width: 544px) {
   .link-color{
     right: 0;

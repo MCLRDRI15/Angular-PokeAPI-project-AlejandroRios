@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 100%;
   grid-gap: 2rem;
-  padding: 2rem 3rem;
+  padding: 0.2rem 3rem;
   width: 100%;
   max-width: 70rem;
 }
@@ -17,7 +17,7 @@
   border-radius: 5px;
   background: var(--backgroundCard);
   border: 2px solid var(--generalBlueColor);
-  box-shadow: var(--borderBoxShadow);
+  box-shadow: var(--Card-shadow);
 }
 
 .pokemon-image {
@@ -53,6 +53,7 @@
 
 .pokemon-item:hover {
   background: var(--backgroundCardHover);
+  box-shadow: var(--Card-shadow-hover);
 }
 
 @media (min-width: 440px) and (max-width: 670px){
