@@ -10,14 +10,15 @@
 .card-image {
   width: 100%;
   max-width: 15rem;
-  background: url(../../../../../assets/images/background-slider.jpeg)  center/cover no-repeat border-box;
+  background: url(../../../../../assets/images/background-slider.jpeg)
+    center/cover no-repeat border-box;
   background-size: cover;
   border-radius: 10px;
   border: 1px solid var(--pokemon-black);
   image-rendering: pixelated;
 }
 
-.pokemon-detail-description{
+.pokemon-detail-description {
   font-weight: 800;
 }
 

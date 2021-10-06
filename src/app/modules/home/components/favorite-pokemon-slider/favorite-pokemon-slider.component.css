@@ -80,12 +80,12 @@
   }
 
   .footer-message {
-    font-size: 0.8rem;
+    font-size: var(--pokemon-comparing-size);
   }
 
   .pokemon-name {
     margin: 0;
-    font-size: 3rem;
+    font-size: var(--two-point-five);
     -webkit-text-stroke: 0.1rem var(--pokemon-black);
     color: var(--pokemon-white);
   }

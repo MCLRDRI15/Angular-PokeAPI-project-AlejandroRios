@@ -110,10 +110,10 @@ export class AppComponent {
   };
 
   particlesLoaded(container: Container): void {
-    console.log(container);
+    
   }
 
   particlesInit(main: Main): void {
-    console.log(main);
+    
   }
 }

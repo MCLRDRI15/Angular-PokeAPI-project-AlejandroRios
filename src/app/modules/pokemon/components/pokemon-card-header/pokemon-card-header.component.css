@@ -6,17 +6,17 @@
   width: 100%;
 }
 
-.favorite-list-heart{
+.favorite-list-heart {
   position: relative;
   top: 0.3rem;
-  animation-name: heartFadeInOut; 
+  animation-name: heartFadeInOut;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-duration: 1s;
   animation-direction: alternate;
 }
 
-.favorite-list-heart:hover{
+.favorite-list-heart:hover {
   animation: none;
 }
 
@@ -81,18 +81,18 @@
 
 @keyframes heartFadeInOut {
   0% {
-    opacity:1;
+    opacity: 1;
   }
   14% {
-    opacity:1;
+    opacity: 1;
   }
   28% {
-    opacity:0;
+    opacity: 0;
   }
   42% {
-    opacity:0;
+    opacity: 0;
   }
   70% {
-    opacity:0;
+    opacity: 0;
   }
 }

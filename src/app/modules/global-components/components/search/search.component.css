@@ -1,5 +1,5 @@
 .search {
-  margin: 1rem 4rem 0rem 0rem;
+  margin: 1rem 4rem 0 0;
   text-align: center;
   
 }
@@ -33,13 +33,7 @@
   border-radius: 10px;
   color: var(--SecondaryBlue);
   font-weight: 600;
-}
-::placeholder {
-  position: relative;
-  left: 1rem;
-  color: var(--SecondaryBlue);
-  opacity: 0.6;
-  text-decoration: none;
+  padding-left: 1rem;
 }
 .form .button {
   width: 8rem;
