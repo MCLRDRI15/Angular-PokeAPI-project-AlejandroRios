@@ -1,0 +1,19 @@
+<app-pokemon-card-header
+  [currentPokemon]="currentPokemon" 
+  [comparisonPokemon]="comparisonPokemon" 
+  [isComparing]="isComparing"
+  [dialogRef]="dialogRef"
+  [favoritePokemonList]="favoritePokemonList">
+</app-pokemon-card-header>
+
+<app-pokemon-card-data 
+  [currentPokemon]="currentPokemonInformation$ | async" 
+  [comparisonPokemon]="comparisonPokemonInformation$ | async" 
+  [isComparing]="isComparing">
+</app-pokemon-card-data>
+
+<app-pokemon-card-chart
+  [currentPokemon]="currentPokemonInformation$ | async" 
+  [comparisonPokemon]="comparisonPokemonInformation$ | async" 
+  [isComparing]="isComparing">
+</app-pokemon-card-chart>

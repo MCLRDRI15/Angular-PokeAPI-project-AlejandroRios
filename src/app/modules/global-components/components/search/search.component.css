@@ -1,0 +1,141 @@
+.search {
+  margin: 1rem 4rem 0 0;
+  text-align: center;
+  
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form .text,
+.form .input,
+.form .button {
+  margin-bottom: 0.6rem;
+}
+
+.form .input {
+  margin-right: 1rem;
+  width: 15rem;
+  height: 2.5rem;
+  border: 2px solid var(--SecondaryBlue);
+  border-radius: 10px;
+  color: var(--SecondaryBlue);
+  font-weight: 600;
+  padding-left: 1rem;
+}
+
+.form .button {
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  border-style: none;
+  color: var(--WhiteColor);
+  font-weight: 900;
+  background: var(--buttonBlue);
+}
+
+.pokemonimg {
+  display: none;
+  visibility: hidden;
+}
+
+.pokemonimg-active {
+  position: relative;
+  display: block;
+  visibility: visible;
+  border: 1px solid var(--SecondaryBlue);
+  box-shadow: var(--circleShadow);
+  border-radius: 50%;
+  width: 4.5rem;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  transition: visibility 7s ease;
+}
+
+@media screen and (max-width: 850px) {
+  .search {
+    position: relative;
+    top: 6.5rem;
+    right: 12rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .search {
+    position: relative;
+    top: 6.5rem;
+    right: 8rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .search {
+    position: relative;
+    top: 6.5rem;
+    right: 4rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .search {
+    position: relative;
+    top: 6.5rem;
+    right: 2rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .search {
+    position: relative;
+    top: 6.5rem;
+    right: 0rem;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .search {
+    position: relative;
+    top: 6.5rem;
+    right: 0rem;
+    left: 2rem;
+  }
+}
+
+@media (max-width: 544px) {
+  .link-color{
+    right: 0;
+    left: 2rem;
+  }
+  .form {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 370px) {
+  .link-color{
+    right: 0;
+    left: 1rem;
+  }
+  .input-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,21 @@
+<navbar></navbar>
+<div class="container-home">
+  <div class="text-center">
+    <section class="section">
+      <h1 class="welcome-tittle">Welcome to PokéApp</h1>
+      <div class="pokemons-gif">
+        <img class="charizard" src="../../../../../assets/images/Charizard.gif" alt="POKEMON" />
+        <a 
+          class="home-button"
+          routerLink="/pokemon"
+          routerLinkActive="active-link"
+          activeClass="navActive"
+        >
+          <span class="home-button-text">What is your favorite?</span>
+        </a>
+        <img class="ivysaur" src="../../../../../assets/images/ivysaur.gif" alt="POKEMON" />
+      </div>
+    </section>
+    <favorite-pokemon-slider [favoritePokemonList]="favoritePokemonList$ | async"></favorite-pokemon-slider>
+  </div>
+</div>

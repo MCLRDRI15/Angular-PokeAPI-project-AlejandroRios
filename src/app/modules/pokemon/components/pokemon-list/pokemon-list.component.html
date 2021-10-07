@@ -1,0 +1,30 @@
+<favorite-message-message message="You can only choose 5 favorites" *ngIf="FavoriteListFull"></favorite-message-message>
+<little-chart-message
+  comparingMessage="Comparing pokemon..." 
+  [pokemonName]="currentPokemon.name" 
+  *ngIf="isComparing">
+</little-chart-message>
+<div 
+  class="pokemon-list" 
+  infiniteScroll
+  (scrolled)="loadMorePokemon()"> 
+  <div 
+    class="pokemon-item" 
+    *ngFor="let pokemon of pokemonListItems; index as pokemonIndex"
+    (click)="pokemonCard(pokemon)">
+    <img class="pokemon-image" [src]="pokemonImages[pokemonIndex]" [alt]="pokemon.name">
+    <div class="pokemon-name">
+    <h2 class="pokemon-name-content">
+      {{ pokemonNames[pokemonIndex] }}
+    </h2>
+    <app-pokemon-favorite
+        class="favorite-list-heart"
+        [pokemon]="pokemon" 
+        [favorite]="favorites[pokemonIndex]"
+        [favoritePokemonLength]="favoritePokemonListItems.length"
+        (isFavoriteListFull)="handleIsFavoriteHearts($event)">
+      </app-pokemon-favorite>
+  </div>
+  </div>
+</div>
+

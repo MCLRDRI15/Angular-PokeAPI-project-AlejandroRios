@@ -1,0 +1,14 @@
+<navbar></navbar>
+<div class="search">
+  <search-component (inputChange)="inputHandler($event)"></search-component>
+</div>
+<div class="pokemon-list-home">
+  <app-pokemon-list 
+    class="pokemon-list" 
+    [pokemonList]="pokemonList$ | async"
+    [favoritePokemonList]="favoritePokemonList$ | async"
+    [isComparing]="isComparing$ | async"
+    [currentPokemon]="currentPokemon$ | async"
+    [comparisonPokemon]="comparisonPokemon$ | async">
+  </app-pokemon-list>
+</div>

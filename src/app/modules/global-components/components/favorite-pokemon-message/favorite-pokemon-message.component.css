@@ -1,0 +1,64 @@
+.message-box {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 8rem;
+  left: 3rem;
+  padding: 0.5rem;
+  z-index: 1;
+  background: url(../../../../../assets/images/favorite-message-img.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  color: var(--pokemon-black);
+  border: 3px solid var(--SecondaryBlue);
+  width: 20rem;
+  height: 10rem;
+  animation: hidden-box 3s forwards;
+}
+
+.message {
+  margin: 0;
+  position: relative;
+  top: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  -webkit-text-stroke: 0.03rem var(--WhiteColor);
+  font-size: var(--one-point-four);
+  color: var(--pokemon-black);
+}
+
+@keyframes hidden-box {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .message-box {
+    top: 15rem;
+    left: 2rem;
+    padding: 0;
+    width: 15rem;
+  }
+
+  .message {
+    top: 4rem;
+    font-size: var(--one-point-cero-two);
+  }
+}
+
+@media (max-width: 370px) {
+  .message-box {
+    top: 19rem;
+    left: 1.2rem;
+    padding: 0;
+    width: 15rem;
+  }
+}

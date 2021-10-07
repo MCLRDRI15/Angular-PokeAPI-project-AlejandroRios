@@ -1,0 +1,20 @@
+<div class="pokemon-header">
+  <button mat-icon-button class="close-button" (click)="onClose()">
+    <mat-icon>close</mat-icon>
+  </button>
+  <h2 class="pokemon-name">{{ pokemonNames[0] }}
+    <ng-container *ngIf="isComparing  && comparisonPokemon">
+      vs {{ pokemonNames[1] }} 
+    </ng-container>
+    <app-pokemon-favorite
+    class="favorite-list-heart" 
+    *ngIf="!isComparing"
+    [bigSize]="true"
+    [pokemon]="currentPokemon" 
+    [favorite]="favorite"
+    [favoritePokemonLength]="favoritePokemonListItems.length">
+  </app-pokemon-favorite>
+  </h2>
+  <button class="compare-button" *ngIf="!isComparing" (click)="onCompare()">Compare</button>
+</div>
+

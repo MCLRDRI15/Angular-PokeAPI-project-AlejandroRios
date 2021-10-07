@@ -1,0 +1,61 @@
+.little-chart {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 8rem;
+  right: 3rem;
+  padding: 0.5rem;
+  z-index: 1;
+  background: var(--HeaderBackground-nav);
+  opacity: 0.8;
+  border-radius: 5px;
+  color: var(--pokemon-gray);
+  border: 3px solid var(--BlueButtonColor);
+  width: 12rem;
+}
+
+.comparing-message {
+  font-size: var(--one-point-cero-two);
+  text-align: center;
+  margin: 0;
+  opacity: 1;
+  color: var(--pokemon-black);
+  margin-bottom: 0.4rem;
+  border-bottom: 1px solid var(--BlueButtonColor);
+}
+
+.pokemon-comparing {
+  margin: 0;
+  padding: 0.5rem 0 0 0;
+  opacity: 1;
+  font-size: var(--one-point-two);
+  text-align: center;
+  color: var(--pokemon-dark-red);
+}
+
+@media (max-width: 900px) {
+  .little-chart {
+    top: 15rem;
+    right: 2rem;
+    width: 8rem;
+  }
+
+  .comparing-message {
+    font-size: var(--comparing-message-size);
+  }
+
+  .pokemon-comparing {
+    padding: 0.3rem 0 0 0;
+    font-size: var(--pokemon-comparing-size);
+  }
+}
+
+ 
+@media (max-width: 370px) {
+  .little-chart {
+    top: 19rem;
+    right: 2rem;
+    width: 8rem;
+  }
+}
