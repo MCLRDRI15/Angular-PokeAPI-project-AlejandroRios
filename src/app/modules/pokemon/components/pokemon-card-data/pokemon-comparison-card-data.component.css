@@ -18,7 +18,7 @@
   text-align: center;
   margin-top: 5rem;
   font-weight: 800;
-  font-size: var(--two);
+  font-size: var(--two-rems);
   color: var(--pokemon-dark-red);
 }
 

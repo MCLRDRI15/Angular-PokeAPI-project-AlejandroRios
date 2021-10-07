@@ -14,7 +14,7 @@
 
 .page-message {
   margin: 2rem 5rem;
-  font-size: var(--five);
+  font-size: var(--five-rems);
   text-align: center;
   color: var(--linkColor);
 }

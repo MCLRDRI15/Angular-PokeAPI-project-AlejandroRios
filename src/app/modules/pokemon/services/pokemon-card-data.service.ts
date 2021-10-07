@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { DefaultDataService, HttpUrlGenerator, QueryParams } from '@ngrx/data';
 import { map } from 'rxjs/operators';
 import { Pokemon } from '../interfaces/pokemon';
+import { FlavorText } from '../interfaces/pokemon-flavor-text';
 
 @Injectable()
 export class PokemonCardDataService extends DefaultDataService<Pokemon> {
@@ -26,7 +27,7 @@ export class PokemonCardDataService extends DefaultDataService<Pokemon> {
             types: pokemonInfo['types'],
             abilities: pokemonInfo['abilities'],
             stats: pokemonInfo['stats'],
-            description: speciesInformations['flavor_text_entries'].filter((entry) => entry.language.name === 'en')[0].flavor_text,
+            description: speciesInformations['flavor_text_entries'].filter((entry: FlavorText) => entry.language.name === 'en')[0].flavor_text,
             genderRate: speciesInformations['gender_rate']
           };
           pokemonArray.push(pokemon);
