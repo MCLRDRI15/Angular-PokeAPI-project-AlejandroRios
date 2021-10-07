@@ -15,9 +15,9 @@ export class PokemonCardDataService extends DefaultDataService<Pokemon> {
     const pokemonArray: Pokemon[] = [];
     return combineLatest([this.http.get(params.url.toString()), this.http.get(params.speciesUrl.toString())])
       .pipe(
-        map(res => {
-          const pokemonInfo = res[0];
-          const speciesInformations = res[1];
+        map(response => {
+          const pokemonInfo = response[0];
+          const speciesInformations = response[1];
           const pokemon: Pokemon = {
             name: pokemonInfo['name'],
             id: pokemonInfo['id'],
@@ -26,7 +26,7 @@ export class PokemonCardDataService extends DefaultDataService<Pokemon> {
             types: pokemonInfo['types'],
             abilities: pokemonInfo['abilities'],
             stats: pokemonInfo['stats'],
-            description: speciesInformations['flavor_text_entries'].filter((entry: any) => entry.language.name === 'en')[0].flavor_text,
+            description: speciesInformations['flavor_text_entries'].filter((entry) => entry.language.name === 'en')[0].flavor_text,
             genderRate: speciesInformations['gender_rate']
           };
           pokemonArray.push(pokemon);
