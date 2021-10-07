@@ -10,21 +10,25 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .form {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .input-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .form .text,
 .form .input,
 .form .button {
   margin-bottom: 0.6rem;
 }
+
 .form .input {
   margin-right: 1rem;
   width: 15rem;
@@ -35,6 +39,7 @@
   font-weight: 600;
   padding-left: 1rem;
 }
+
 .form .button {
   width: 8rem;
   height: 2.5rem;
