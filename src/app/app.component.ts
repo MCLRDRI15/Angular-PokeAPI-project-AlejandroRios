@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Container, Main } from 'tsparticles';
 
 @Component({
   selector: 'app-root',
@@ -109,11 +108,4 @@ export class AppComponent {
     detectRetina: true,
   };
 
-  particlesLoaded(container: Container): void {
-    
-  }
-
-  particlesInit(main: Main): void {
-    
-  }
 }

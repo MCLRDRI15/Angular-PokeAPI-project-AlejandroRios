@@ -4,21 +4,27 @@ import { FavoriteMessageComponent } from './components/favorite-pokemon-message/
 import { LittleChartComponent } from './components/little-chart-message/info-message.component';
 import { SearchComponent } from './components/search/search.component';
 import { MatIconModule } from '@angular/material/icon';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import {RouterModule} from '@angular/router';
+
 
 @NgModule({
   declarations: [
     FavoriteMessageComponent,
     LittleChartComponent,
-    SearchComponent
+    SearchComponent,
+    NavbarComponent,
   ],
   imports: [
     CommonModule,
     MatIconModule,
+    RouterModule
   ],
   exports: [
     FavoriteMessageComponent,
     LittleChartComponent,
-    SearchComponent
+    SearchComponent,
+    NavbarComponent
   ]
 })
 export class GlobalModule { }

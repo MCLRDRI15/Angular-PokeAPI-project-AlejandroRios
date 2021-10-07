@@ -15,6 +15,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { GlobalModule } from './modules/global-components/global.module';
 import { environment } from '../environments/environment';
 import { entityConfig } from './entity-metadata';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,6 +24,7 @@ import { entityConfig } from './entity-metadata';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    RouterModule,
     MatIconModule,
     NgParticlesModule,
     GlobalModule,
